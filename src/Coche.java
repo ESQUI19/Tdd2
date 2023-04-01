@@ -3,13 +3,13 @@ public class Coche {
 
 	public int velocidad;
 
-	public void acelerar(int aceleracion) {
+	public void acelerar_Victoria(int aceleracion) {
 		
 		velocidad += aceleracion;
 		
 	}
 
-	public void decelerar(int deceleracion) {
+	public void decelerar_Victoria(int deceleracion) {
 		
 		velocidad -= deceleracion;
 		

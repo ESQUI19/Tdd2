@@ -19,7 +19,7 @@ class TestCoche {
 	@Test
 	void test_al_acelerar_un_coche_su_velocidad_es_aumenta() {
 		Coche nuevoCoche = new Coche();
-		nuevoCoche.acelerar(30);
+		nuevoCoche.acelerar_Victoria(30);
 		Assertions.assertEquals(30, nuevoCoche.velocidad);
 	}
 	
@@ -32,7 +32,7 @@ class TestCoche {
 		nuevoCoche.velocidad = 50;
 		
 		//decelera la velocidad del coche en 20
-		nuevoCoche.decelerar(20);
+		nuevoCoche.decelerar_Victoria(20);
 		
 		//se espera que la velocidad final sea de 30
 		Assertions.assertEquals(30, nuevoCoche.velocidad);
@@ -44,7 +44,7 @@ class TestCoche {
 		nuevoCoche.velocidad = 50;
 		
 		//el coche tiene una velocidad de 50 y se decrementa en 80 (resultado -30)
-		nuevoCoche.decelerar(80);
+		nuevoCoche.decelerar_Victoria(80);
 		
 		//se espera que la velocidad final sea de 0
 		Assertions.assertEquals(0, nuevoCoche.velocidad);
